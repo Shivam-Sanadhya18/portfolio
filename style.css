@@ -1198,3 +1198,175 @@ h3 {
     border: none;
     border-radius: 0;
 }
+/* ========================================
+   CERTIFICATIONS & LEARNING SECTION
+======================================== */
+
+.certifications-section {
+    position: relative;
+}
+
+.cert-category {
+    margin-top: 34px;
+}
+
+.cert-platform {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.cert-platform > div {
+    min-width: 0;
+}
+
+.cert-platform h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.cert-platform p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--muted, #777777);
+}
+
+.cert-platform-logo {
+    display: block;
+    flex-shrink: 0;
+    width: 62px;
+    height: 62px;
+    padding: 8px;
+    object-fit: contain;
+    box-sizing: border-box;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--white);
+}
+
+/* Grid aligned with the Projects section */
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 20px;
+}
+
+/* Compact certification cards */
+
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+/* Issuer / platform label */
+
+.cert-issuer {
+    margin: 0 0 10px;
+    color: var(--accent);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Certificate title */
+
+.cert-card h4 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+}
+
+/* Description */
+
+.cert-description {
+    margin: 0 0 16px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+/* Optional credential ID */
+
+.cert-id {
+    margin: 0 0 12px;
+    font-size: 0.72rem;
+    line-height: 1.6;
+    color: var(--muted, #777777);
+    overflow-wrap: anywhere;
+}
+
+/* Keep links aligned at the bottom */
+
+.cert-card .text-link {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding-top: 8px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* Tablet */
+
+@media (max-width: 950px) {
+    .certifications-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+    .cert-category {
+        margin-top: 28px;
+    }
+
+    .certifications-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .cert-card {
+        padding: 18px;
+    }
+
+    .cert-platform {
+        gap: 12px;
+    }
+
+    .cert-platform-logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .cert-platform h3 {
+        font-size: 1.08rem;
+    }
+}
