@@ -1172,3 +1172,28 @@ h3 {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 }
 
+/* Project cards: restore consistent alignment */
+.projects-grid {
+    align-items: stretch;
+}
+
+.project-card {
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-visual {
+    height: 220px;
+    overflow: hidden;
+    border: none;
+    box-sizing: border-box;
+}
+
+.project-visual .project-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    border-radius: 0;
+}
