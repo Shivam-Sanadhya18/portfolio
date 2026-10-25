@@ -1183,10 +1183,8 @@ h3 {
 }
 
 .project-visual {
-    height: 220px;
+    height: 205px;
     overflow: hidden;
-    border: none;
-    box-sizing: border-box;
 }
 
 .project-visual .project-image {
